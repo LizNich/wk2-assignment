@@ -43,21 +43,6 @@ body {
   object-fit: cover;
 }
 
-/* To be added on click
-img:focus {
-  outline: 5px solid red;
-}*/
-
-/*@media (min-width: 600px) {
-  #display-image {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}*/
-
-/* CURRENTLY NOT WORKING - HOVER OVER IMAGE - IMAGE TURNS BLUE BORDER
-img:hover {
+/*input:focus {
   border-color: blue;
-  border: solid;
-}
-  */
+}*/
