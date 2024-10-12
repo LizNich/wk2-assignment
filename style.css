@@ -1,0 +1,63 @@
+/*GETS RID OF THE TINY BORDER AROUND THE SCREEN*/
+* {
+  box-sizing: border-box;
+}
+
+/*ADDS INITAL BACKGROUND IMAGE WITHOUT SCROLL BARS SHOWING*/
+body {
+  background-image: url(assets/02-pink.jpg);
+  margin: 0;
+  position: absolute;
+  background-size: cover;
+}
+
+/*BOX FOR THE THUMBNAIL IMAGES*/
+#thumbnail-container {
+  width: 100%;
+  min-height: 100px;
+  padding: 50px;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+}
+
+/*THUMBNAIL IMAGES.  INCLUDES A TRANSPARENT BORDER FOR A NICE LOOK*/
+#thumbnail-container img {
+  height: 80px;
+  width: auto;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+/* SELECTED IMAGE DISPLAYS. SET TO NOT SQUASH IMAGES ON SMALLER SCREENS. PROVIDES A CUT IMAGE INSTEAD FOR A BETTER VIEW */
+#display-image {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+/* To be added on click
+img:focus {
+  outline: 5px solid red;
+}*/
+
+/*@media (min-width: 600px) {
+  #display-image {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}*/
+
+/* CURRENTLY NOT WORKING - HOVER OVER IMAGE - IMAGE TURNS BLUE BORDER
+img:hover {
+  border-color: blue;
+  border: solid;
+}
+  */
